@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title> Jennifer Lopez </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <img id="logo" src="./img/logo/transp-blue.png" alt="Logo for Jennifer Lopez">
+            <ul id="nav-list">
+                <a href="#about">
+                    <li id="menu1"> About Me </li>
+                </a>
+                <a href="#projects">
+                    <li id="menu2"> Projects </li>
+                </a>
+                <a href="#contact">
+                    <li id="menu3"> Contact Me </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-text">
+                <h1> Jennifer Lopez </h1>
+                <p> Software Engineer / Front End Developer </p>
+                <a href="#about"><button> About Me </button></a>
+            </div>
+            <div class="hero-social-media">
+                <a href="https://www.linkedin.com/in/jennifer464/" target="_blank">
+                    <img src="./img/social/linkedin.svg" alt="Icon for Jennifer's LinkedIn">
+                </a>
+                <a href="https://github.com/Jennifer-464" target="_blank">
+                    <img src="./img/social/github-square.svg" alt="Icon for Jennifer's GitHub">
+                </a>
+                <a href="mailto:jenniferlopezh0@gmail.com" target="_blank">
+                    <img src="./img/social/envelope.svg" alt="Icon for Jennifer's email">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-me" id="about">
+        <div class="about-information">
+            <h2> About Me </h2>
+            <p id="about-p1"> Hey there! My name is Jennifer Lopez & I am a Software Engineer
+                grad with a strong fascination for Front End Development, currently
+                seeking a full-time job within my field. &#128522;
+            </p>
+            <br>
+            <br>
+            <p id="about-p2"> At the moment, I am taking the lead in our
+                <a href="https://digitalnest.org/" target="_blank"> company's</a>
+                Front End Developing pathway through the creation of over 20
+                HTML/CSS/JS and WordPress projects keeping accessiblity and
+                responsive design in mind. Additionally, I have crafted visually
+                captivating Figma web designs for our Web Developers and
+                Designers alike.
+            </p>
+            <!-- Hey there! <br><br>
+                I am Jennifer Lopez a highly motivated Front End Developer actively seeking
+                for a full-time position. I am a Software Engineer Grad from the
+                <a href="https://computingtalentinitiative.org/csin3/" target="_blank"> CSin3 </a>
+                program, meaning I completed my degree in 3 years with the support of my peers.
+                <br>
+                Over the past year, I have developed a strong fascination for Front End Development
+                and have taken the lead in our
+                <a href="https://digitalnest.org/" traget="_blank"> company's</a> Front End Developing pathway.
+                My journey has been focused on creating visually captivating Figma web designs and
+                interactive WordPress sites. With the help of 100+ designs that
+                <a href="https://www.frontendmentor.io/" traget="_blank"> Frontend Mentor</a>
+                provide, I've created a few
+                <a href="https://www.frontendmentor.io/profile/Jennifer-464" traget="_blank"> websites</a>
+                using HTML/CSS/JS.
+                <br>
+                With a solid educational background and hands-on experience, I am well-equipped
+                to take on new challenges and contribute to the success of any Front End
+                development team. -->
+        </div>
+        <div class="about-headshot">
+            <img src="./img/me.jpg" alt="Jennifer's professional headshot">
+        </div>
+    </section>
+
+    <section class="my-projects" id="projects">
+        <h2> Projects </h2>
+        <div class="container">
+            <div class="card">
+                <img class="project-image" src="./img/projects/price-grid.png" alt="">
+                <h3> Single Price Grid </h3>
+                <p class="subtext"> I practiced Responsive Design
+                    for desktop & mobile versions. I learned to deploy with
+                    GitHub Pages and how spaces between tags can affect the display.
+                </p>
+                <hr>
+                <p class="subtext"><a class="project-link" target="_blank"
+                        href="https://github.com/Jennifer-464/front-end-activities/blob/main/HTML-CSS-JS/Challenges/challenge3-newbie-grid/challenge3.md">
+                        View Here</a>
+                </p>
+            </div>
+            <div class="card">
+                <img class="project-image" src="./img/projects/testimonial-grid.png" alt="">
+                <h3> Testimonials </h3>
+                <p class="subtext"> I practiced my Grid & Accessibility skills.
+                    I've been improving on using semantic elements
+                    and how to keep clean code throughout.
+                </p>
+                <hr>
+                <p class="subtext"><a class="project-link" target="_blank"
+                        href="https://github.com/Jennifer-464/front-end-activities/blob/main/HTML-CSS-JS/Challenges/challenge4-junior-grid/challenge4.md">
+                        View Here</a>
+                </p>
+            </div>
+            <div class="card">
+                <img class="project-image" id="need-border" src="./img/projects/results-summary.png" alt="">
+                <h3> Results Summary </h3>
+                <p class="subtext"> I learned how to create a mini "database"
+                    in a JSON file and how to use Fetch API to extract data to
+                    display the results dynamically.<br>
+                </p>
+                <hr>
+                <p class="subtext"><a class="project-link" target="_blank"
+                        href="https://github.com/Jennifer-464/frontend-mentor/blob/main/Newbie/2-Results-Summary/challenge.md">
+                        View Here</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact me</h2>
+        <p>jenniferlopezh0@gmail.com</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

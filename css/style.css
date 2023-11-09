@@ -1,0 +1,415 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-color: #013047;
+    color: #f3f3f3;
+    font-size: 40px;
+    padding: 0 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+}
+
+#logo {
+    height: 80px;
+    margin-top: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 16px;
+    font-size: 24px;
+    display: flex;
+}
+
+li {
+    padding-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+.hero {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1,
+.hero-text p {
+    padding-bottom: 10px;
+}
+
+.hero-text {
+    padding-bottom: 200px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+button {
+    width: 200px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #9bd7f3;
+    border: none;
+    font-size: 30px;
+    font-weight: 100;
+    color: #013047;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #85c0db;
+}
+
+.hero-social-media {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+.hero-social-media img {
+    width: 50px;
+    margin-bottom: 24px;
+}
+
+section {
+    min-height: 500px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 80px;
+}
+
+.about-information p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.about-information a {
+    color: #219ebc;
+}
+
+.about-headshot img {
+    width: 300px;
+    border-radius: 150px;
+    border: 3px solid #219ebc;
+}
+
+.about-headshot {
+    margin-left: 100px;
+}
+
+.my-projects {
+    padding: 80px;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    min-width: 300px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+}
+
+.project-image {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+#need-border {
+    border: 2px solid rgb(229, 239, 245);
+}
+
+.subtext {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #219ebc;
+    font-weight: bold;
+}
+
+footer {
+    height: 400px;
+    background-color: #3f3f3f;
+    color: #f3f3f3;
+    text-align: center;
+    font-size: 40px;
+    padding: 80px;
+}
+
+@media (max-width: 992px) {
+    #logo {
+        height: 64px;
+    }
+
+    li {
+        padding-left: 50px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    li,
+    p,
+    .about-information #about-p1,
+    .about-information #about-p2,
+    .subtext,
+    button {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .about-me {
+        align-items: self-start;
+    }
+
+    #about-p2 {
+        position: absolute;
+        margin-right: 80px;
+    }
+
+    .about-headshot {
+        padding-top: 30px;
+    }
+
+    .about-headshot img {
+        width: 225px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 40px;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 16px;
+        display: block;
+        width: 40px;
+        margin-top: 32px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .burger-line {
+        width: 40px;
+        height: 4px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        background-color: white;
+        transition: .3s;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .show {
+        display: block;
+        background-color: #3f3f3f;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        margin: 0;
+        padding: 80px 0;
+    }
+
+    .show li {
+        font-size: 20px;
+        line-height: 70px;
+    }
+
+    .active .burger-line:first-child {
+        transform: translateY(15px) rotate(45deg);
+    }
+
+    .active .burger-line:nth-child(2) {
+        width: 5px;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .active .burger-line:last-child {
+        transform: translateY(-3px) rotate(-45deg);
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .about-me {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 80px 40px;
+    }
+
+    .about-headshot {
+        margin: 0 auto;
+    }
+
+    #about-p2 {
+        position: static;
+        margin-right: 0;
+    }
+
+    .my-projects {
+        padding: 80px 40px;
+    }
+
+    footer {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    li,
+    p,
+    .about-information p,
+    .subtext,
+    button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    header {
+        padding: 0 16px;
+    }
+
+    .hamburger {
+        margin-top: 24px;
+    }
+
+    .burger-line {
+        height: 3px;
+    }
+
+    .active .burger-line:first-child {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .active .burger-line:nth-child(2) {
+        width: 5px;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .active .burger-line:last-child {
+        transform: translateY(-4px) rotate(-45deg);
+    }
+
+    .about-me {
+        padding: 80px 16px;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+    }
+
+    .hero-text,
+    .hero-social-media {
+        padding-bottom: 100px;
+    }
+
+    .hero-social-media img {
+        width: 24px;
+        margin: 0;
+    }
+
+    .my-projects {
+        padding: 80px 16px;
+    }
+
+    .card {
+        min-width: unset;
+        max-width: 300px;
+        width: 100%;
+        height: 424px;
+        margin: 32px 0 0;
+    }
+
+    footer {
+        padding: 16px;
+    }
+}
