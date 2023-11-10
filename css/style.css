@@ -87,10 +87,11 @@ button {
     border-radius: 40px;
     background-color: #9bd7f3;
     border: none;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 100;
     color: #013047;
     margin-top: 20px;
+    font-family: inherit;
 }
 
 button:hover {
@@ -119,7 +120,7 @@ section {
 }
 
 .about-information p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
 }
 
